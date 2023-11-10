@@ -1,0 +1,17 @@
+{
+    "pageType": "product",
+    "event": "product",
+    "products": [
+        {
+            "id": "6905242615921",
+            "sku": "D-DYN-MENSBSELLER-3R",
+            "variantId": "40336614981745",
+            "productType": "Bundle",
+            "name": "Men's Best Sellers 3 Ring Set (Default Title)",
+            "price": "79.99",
+            "currency": "USD",
+            "category": "Bundled Best Sellers"
+        }
+    ],
+    "gtm.uniqueEventId": 71
+}

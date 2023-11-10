@@ -1,0 +1,27 @@
+{
+    "pageType": "product",
+    "event": "cart",
+    "products": [
+        {
+            "id": "6922504372337",
+            "sku": "D-266UTVEICSVBP12US",
+            "variantId": "40375825498225",
+            "name": "Harry Potter Silicone Ring - Until the Very End",
+            "price": "33.74",
+            "comparePrice": "44.99",
+            "quantity": 1,
+            "category": "You'll Stay With Me / Until the Very End"
+        },
+        {
+            "id": "6922504372337",
+            "sku": "D-266UTVEICSVBP12US",
+            "variantId": "40375825498225",
+            "name": "Harry Potter Silicone Ring - Until the Very End",
+            "price": "33.74",
+            "comparePrice": "44.99",
+            "quantity": 1,
+            "category": "You'll Stay With Me / Until the Very End"
+        }
+    ],
+    "gtm.uniqueEventId": 45
+}
