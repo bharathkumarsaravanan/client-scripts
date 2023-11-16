@@ -1,0 +1,76 @@
+{
+    "event": "dl_add_to_cart",
+    "event_id": "461aca11-02ab-467d-a4d4-d3877972f96a",
+    "ecommerce": {
+        "currencyCode": "USD",
+        "add": {
+            "actionField": {
+                "list": "",
+                "action": "add"
+            },
+            "products": [
+                {
+                    "id": "CAPS-1NB",
+                    "name": "Capsules (subscription)",
+                    "brand": "TruBrain",
+                    "category": "",
+                    "variant": "Strong",
+                    "price": "69.0",
+                    "quantity": "1",
+                    "list": "",
+                    "product_id": "4843710480469",
+                    "variant_id": "40164317790293",
+                    "compare_at_price": "119.0",
+                    "image": "//www.trubrain.com/cdn/shop/products/Boostrenderingtransparentbackground_tiny_small.png?v=1694649390"
+                }
+            ]
+        }
+    },
+    "event_time": "2023-09-29T14:06:38.051Z",
+    "marketing": {
+        "_fbp": "fb.1.1695995872276.2037224886",
+        "_ga": "GA1.2.2084949690.1695995872",
+        "_ga_82294SFYH2": "GS1.2.1695995872.1.1.1695996329.0.0.0",
+        "_ga_3VDV4TZB7G": "GS1.1.1695995872.1.1.1695996045.37.0.0",
+        "user_id": "376f5136-44ee-4657-bcec-df982f600c8b"
+    },
+    "gtm.uniqueEventId": 5
+}
+dataLayer.push({
+    "event": "dl_add_to_cart",
+    "event_id": "461aca11-02ab-467d-a4d4-d3877972f96a",
+    "ecommerce": {
+        "currencyCode": "USD",
+        "add": {
+            "actionField": {
+                "list": "",
+                "action": "add"
+            },
+            "products": [
+                {
+                    "id": "CAPS-1NB",
+                    "name": "Capsules (subscription)",
+                    "brand": "TruBrain",
+                    "category": "",
+                    "variant": "Strong",
+                    "price": "69.0",
+                    "quantity": "1",
+                    "list": "",
+                    "product_id": "4843710480469",
+                    "variant_id": "40164317790293",
+                    "compare_at_price": "119.0",
+                    "image": "//www.trubrain.com/cdn/shop/products/Boostrenderingtransparentbackground_tiny_small.png?v=1694649390"
+                }
+            ]
+        }
+    },
+    "event_time": "2023-09-29T14:06:38.051Z",
+    "marketing": {
+        "_fbp": "fb.1.1695995872276.2037224886",
+        "_ga": "GA1.2.2084949690.1695995872",
+        "_ga_82294SFYH2": "GS1.2.1695995872.1.1.1695996329.0.0.0",
+        "_ga_3VDV4TZB7G": "GS1.1.1695995872.1.1.1695996045.37.0.0",
+        "user_id": "376f5136-44ee-4657-bcec-df982f600c8b"
+    },
+    "gtm.uniqueEventId": 5
+})
