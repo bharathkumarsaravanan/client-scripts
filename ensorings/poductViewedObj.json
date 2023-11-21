@@ -3,15 +3,15 @@
     "event": "product",
     "products": [
         {
-            "id": "6905242615921",
-            "sku": "D-DYN-MENSBSELLER-3R",
-            "variantId": "40336614981745",
-            "productType": "Bundle",
-            "name": "Men's Best Sellers 3 Ring Set (Default Title)",
-            "price": "79.99",
+            "id": "6879198150769",
+            "sku": "D-228MGTQPS4US",
+            "variantId": "40238339129457",
+            "productType": "Ring",
+            "name": "Toe Ring Set (Default Title)",
+            "price": "14.99",
             "currency": "USD",
-            "category": "Bundled Best Sellers"
+            "category": "Toe Rings"
         }
     ],
-    "gtm.uniqueEventId": 71
+    "gtm.uniqueEventId": 16
 }

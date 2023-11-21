@@ -1,19 +1,20 @@
-function productsConversion(productsArr) {
+<script>
+    function productsConversion(productsArr) {
         var products = [];
         for (var i = 0; i < productsArr.length; i++) {
         var productsStructure = {};
         for (key in productsArr[i]) {
             switch (key) {
-            case "item_name":
+            case "name":
                 productsStructure["product_name"] = {
                 t: "string",
-                v: productsArr[i]["item_name"]|| "UNKNOWN",
+                v: productsArr[i]["name"]|| "UNKNOWN",
                 };
                 break;
-            case "item_id":
+            case "id":
                 productsStructure["product_id"] = {
                 t: "string",
-                v: productsArr[i]["item_id"] || "UNKNOWN",
+                v: productsArr[i]["id"] || "UNKNOWN",
                 };
                 break;
             case "price":
@@ -22,7 +23,7 @@ function productsConversion(productsArr) {
                 v: productsArr[i]["price"] || 1,
                 };
                 break;
-            case "item_category":
+            case "category":
                 productsStructure["product_category"] = {
                 t: "string",
                 v: productsArr[i]["category"]|| "UNKNOWN",
@@ -34,10 +35,10 @@ function productsConversion(productsArr) {
                 v: productsArr[i]["quantity"]|| "UNKNOWN",
                 };
                 break;
-            case "item_variant":
+            case "variantId":
                 productsStructure["product_variant"] = {
                 t: "string",
-                v: productsArr[i]["variant"] || "UNKNOWN",
+                v: productsArr[i]["variantId"] || "UNKNOWN",
                 };
                 break;
             case "item_brand":
@@ -46,6 +47,7 @@ function productsConversion(productsArr) {
                 v: productsArr[i]["brand"] || "UNKNOWN",
                 };
                 break;
+
             default:
                 if (productsArr[i][key]) {
                 var isNum = /^\d+$/.test(productsArr[i][key]);
@@ -64,39 +66,26 @@ function productsConversion(productsArr) {
         }
         return products;
     }
-    function customConversion(customProps) {
-        var customStructure = {};
-        for (key in customProps) {
-        switch (key) {
-            case "currency":
-            customStructure["currency"] = customProps[key] || "USD";
-            break;
-            case "value":
-            customStructure["value"] = customProps[key];
-            break;
-            case "content_type":
-            customStructure["content_type"] = customProps[key];
-            break;
-        }
-        }
-        return customStructure;
-    }
-    if (!window.cl_added_to_cart) {
-        window.cl_added_to_cart = (function () {
-            if (((window.CLabsgbVar || {}).generalProps || {}).uid) {
-                var cdl = dataLayer || {};
-                for (var i in cdl) {
-                obj = cdl[i];
-                for (var j in obj) {
-                    if (obj[j] == "cart") {
-                    var productList = obj["products"] || [];
+
+
+        if (!window.cl_product_view) {
+            window.cl_product_view = (function(){
+                if (((window.CLabsgbVar || {}).generalProps || {}).uid) {
+                    var products = window.google_tag_manager["GTM-KP23M6W"].dataLayer.get("products");
+                    var currencyCode = (((products || [])[0] || {})["currency"]) || "USD";
                     var properties = {};
-                    properties["customProperties"] = customConversion(productList);
-                    properties["productProperties"] = productsConversion(productList);
-                    _cl.track("Added to cart", properties);
+                    properties["productProperties"] = productsConversion((products || []));
+                    properties["customProperties"] = {
+                        "currency": {
+                            "t": "string",
+                            "v": currencyCode
+                        }
                     }
+                    _cl.track("Added to cart", properties);
                 }
-                }
-            }
-        })();
-    }
+            })();
+        }
+</script>
+
+
+
